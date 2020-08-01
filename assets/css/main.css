@@ -3687,7 +3687,7 @@ a.icon.style2:active:before {
 				#banner .content header h2 {
 					font-size: 1.5em;
 					text-align: center;
-					padding-top: 1%;
+					padding-top: 2%;
 				}
 
 				#banner .content header p {
@@ -3696,14 +3696,7 @@ a.icon.style2:active:before {
 					#banner .content header p br {
 						display: block;
 					}
-
-				#banner .content header ul.icons {
-					text-align: center;
-				}
-					
-					#banner .content header ul.icons li {
-						padding-right: 4%;
-					}
+				
 
 		/* Footer */
 
