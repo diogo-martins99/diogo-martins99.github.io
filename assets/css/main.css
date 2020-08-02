@@ -3679,24 +3679,7 @@ a.icon.style2:active:before {
 
 			#banner .content {
 				padding: 4.5em;
-			}
-			/*#banner .content {
-				padding: 3em 1.5625em 5.25em 1.5625em;
-			}*/
-
-				#banner .content header h2 {
-					font-size: 2em;
-					text-align: center;
-					padding-top: 2%;
-				}
-
-				#banner .content header p {
-					text-align: center;
-				}
-					#banner .content header p br {
-						display: block;
-					}
-				
+			}		
 
 		/* Footer */
 
@@ -3804,6 +3787,19 @@ a.icon.style2:active:before {
 						#banner .content header p br {
 							display: block;
 						}
+						
+						#banner .content header ul.icons {
+							text-align: center;
+						}
+							
+							#banner .content header ul.icons li {
+								padding-right: 4%;
+							}
+
+							#banner .content .image {
+								height: 13em;
+								width: 13em;
+							}
 
 		/* Footer */
 
