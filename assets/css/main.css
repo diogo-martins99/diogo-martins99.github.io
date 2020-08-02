@@ -3790,17 +3790,22 @@ a.icon.style2:active:before {
 						
 						#banner .content header ul.icons {
 							text-align: center;
+							padding: 0%;
+
 						}
 							
 							#banner .content header ul.icons li {
-								padding-right: 4%;
+								padding-right: 2%;
 							}
 
 							#banner .content .image {
 								height: 13em;
 								width: 13em;
 							}
-
+		/* Thanks Note */					
+			.container header p br {
+				display: block;
+			}
 		/* Footer */
 
 			#footer {
@@ -3902,7 +3907,7 @@ a.icon.style2:active:before {
 
 			#banner {
 				box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
-				/*min-height: calc(100vh - 44px);*/
+				min-height: calc(100vh - 44px);
 			}
 
 				#banner:before {
@@ -4120,6 +4125,10 @@ a.icon.style2:active:before {
 				transform: translateX(0);
 			}*/
 
+		/* Thanks Note */					
+		.container header p br {
+			display: block;
+		}
 		/* Footer */
 
 			#footer {
@@ -4216,12 +4225,16 @@ a.icon.style2:active:before {
 						width: 9em;
 					}
 
+
+		.container header p br {
+			display: block;
+		}
+
 		/* Footer */
 
 			#footer {
 				padding: 3em 1.25em;
 			}
-
 				#footer .copyright {
 					line-height: inherit;
 				}
