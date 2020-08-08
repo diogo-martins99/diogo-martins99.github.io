@@ -700,6 +700,14 @@ input, select, textarea {
 
 		}
 
+	/* Container2 */
+
+	.container2 {
+		margin: 0 auto;
+		max-width: 100%;
+		width: 100%;
+	}
+
 /* Row */
 
 	.row {
@@ -2173,6 +2181,23 @@ input, select, textarea {
 	section.special, article.special {
 		text-align: center;
 	}
+	
+	section.special .goto-next {
+		-moz-transform: translate(0,0);
+		-webkit-transform: translate(0,0);
+		-ms-transform: translate(0,0);
+		transform: translate(0,0);
+		-moz-transition: -moz-transform 0.75s ease, opacity 1s ease-in;
+		-webkit-transition: -webkit-transform 0.75s ease, opacity 1s ease-in;
+		-ms-transition: -ms-transform 0.75s ease, opacity 1s ease-in;
+		transition: transform 0.75s ease, opacity 1s ease-in;
+		-moz-transition-delay: 0.5s;
+		-webkit-transition-delay: 0.5s;
+		-ms-transition-delay: 0.5s;
+		transition-delay: 0.5s;
+		opacity: 1;
+		z-index: 2;
+	}
 
 	header p {
 		color: #ffffff;
@@ -2218,6 +2243,8 @@ input, select, textarea {
 	footer.major {
 		margin: 4em 0 0 0;
 	}
+
+
 
 /* Form */
 
@@ -3019,7 +3046,7 @@ a.icon.style2:active:before {
 		text-indent: 10em;
 		white-space: nowrap;
 		width: 10em;
-		z-index: 1;
+		z-index: 2;
 	}
 
 		.goto-next:before {
@@ -3035,7 +3062,7 @@ a.icon.style2:active:before {
 			position: absolute;
 			top: 50%;
 			width: 2em;
-			z-index: 1;
+			z-index: 2;
 		}
 
 /* Spotlight */
@@ -3177,6 +3204,7 @@ a.icon.style2:active:before {
 			-ms-transition-delay: 0.5s;
 			transition-delay: 0.5s;
 			opacity: 1;
+			z-index: 2;
 		}
 
 		.spotlight.top .content, .spotlight.bottom .content {
@@ -3272,8 +3300,38 @@ a.icon.style2:active:before {
 
 	.wrapper {
 		padding: 6em 0 4em 0;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+		position: relative;
+	}
+	.wrapper:before {
+		content: '';
 	}
 
+	.wrapper .goto-next {
+		-moz-transform: translate(0,0);
+		-webkit-transform: translate(0,0);
+		-ms-transform: translate(0,0);
+		transform: translate(0,0);
+		-moz-transition: -moz-transform 0.75s ease, opacity 1s ease-in;
+		-webkit-transition: -webkit-transform 0.75s ease, opacity 1s ease-in;
+		-ms-transition: -ms-transform 0.75s ease, opacity 1s ease-in;
+		transition: transform 0.75s ease, opacity 1s ease-in;
+		-moz-transition-delay: 0.5s;
+		-webkit-transition-delay: 0.5s;
+		-ms-transition-delay: 0.5s;
+		transition-delay: 0.5s;
+		opacity: 1;
+		z-index: 2;
+	}
+
+	.wrapper.inactive .goto-next {
+		-moz-transform: translate(0,1.5em);
+		-webkit-transform: translate(0,1.5em);
+		-ms-transform: translate(0,1.5em);
+		transform: translate(0,1.5em);
+		opacity: 0;
+	}
 		.wrapper.style2 {
 			background: #e44c65;
 		}
@@ -3332,7 +3390,7 @@ a.icon.style2:active:before {
 					background-color: rgba(255, 255, 255, 0.25) !important;
 				}
 
-		.wrapper.fade-down > .container {
+		.wrapper.fade-down > .container, .wrapper.fade-down > .container2 {
 			-moz-transform: translate(0,0);
 			-webkit-transform: translate(0,0);
 			-ms-transform: translate(0,0);
@@ -3344,7 +3402,7 @@ a.icon.style2:active:before {
 			opacity: 1;
 		}
 
-		.wrapper.fade-down.inactive > .container {
+		.wrapper.fade-down.inactive > .container, .wrapper.fade-down.inactive > .container2 {
 			-moz-transform: translate(0,-1em);
 			-webkit-transform: translate(0,-1em);
 			-ms-transform: translate(0,-1em);
@@ -3352,7 +3410,7 @@ a.icon.style2:active:before {
 			opacity: 0;
 		}
 
-		.wrapper.fade-up > .container {
+		.wrapper.fade-up > .container, .wrapper.fade-up > .container2 {
 			-moz-transform: translate(0,0);
 			-webkit-transform: translate(0,0);
 			-ms-transform: translate(0,0);
@@ -3364,7 +3422,7 @@ a.icon.style2:active:before {
 			opacity: 1;
 		}
 
-		.wrapper.fade-up.inactive > .container {
+		.wrapper.fade-up.inactive > .container, .wrapper.fade-up.inactive > .container2 {
 			-moz-transform: translate(0,1em);
 			-webkit-transform: translate(0,1em);
 			-ms-transform: translate(0,1em);
@@ -3372,7 +3430,28 @@ a.icon.style2:active:before {
 			opacity: 0;
 		}
 
-		.wrapper.fade > .container {
+		
+		.wrapper.fade-up > .goto-next {
+			-moz-transform: translate(0,0);
+			-webkit-transform: translate(0,0);
+			-ms-transform: translate(0,0);
+			transform: translate(0,0);
+			-moz-transition: -moz-transform 1s ease, opacity 1s ease;
+			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
+			transition: transform 1s ease, opacity 1s ease;
+			opacity: 1;
+		}
+
+		.wrapper.fade-up.inactive > .goto-next {
+			-moz-transform: translate(0,1em);
+			-webkit-transform: translate(0,1em);
+			-ms-transform: translate(0,1em);
+			transform: translate(0,1em);
+			opacity: 0;
+		}
+
+		.wrapper.fade > .container, .wrapper2.fade > .container {
 			-moz-transition: opacity 1s ease;
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
@@ -3380,8 +3459,24 @@ a.icon.style2:active:before {
 			opacity: 1;
 		}
 
-		.wrapper.fade.inactive > .container {
+		.wrapper.fade.inactive > .container, .wrapper2.fade.inactive > .container {
 			opacity: 0;
+		}
+
+		.wrapper.fade > .goto-next {
+			-moz-transition: opacity 1s ease;
+			-webkit-transition: opacity 1s ease;
+			-ms-transition: opacity 1s ease;
+			transition: opacity 1s ease;
+			opacity: 1;
+		}
+
+		.wrapper.fade.inactive > .goto-next {
+			opacity: 0;
+		}
+
+		.wrapper .goto-next {
+			display: none;
 		}
 
 
@@ -5276,16 +5371,16 @@ body.is-preload .gallery.onload-fade-in article .image2 img {
 			-ms-justify-content: center;
 			justify-content: center;
 			pointer-events: none;
-			-moz-transition: opacity 0.2s ease-in-out;
-			-webkit-transition: opacity 0.2s ease-in-out;
-			-ms-transition: opacity 0.2s ease-in-out;
-			transition: opacity 0.2s ease-in-out;
+			-moz-transition: opacity 0.33s ease-in-out;
+			-webkit-transition: opacity 0.33s ease-in-out;
+			-ms-transition: opacity 0.33s ease-in-out;
+			transition: opacity 0.33s ease-in-out;
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.5);
+			background-color: rgba(0, 0, 0, 0.75);
 			opacity: 0;
 			padding: 2rem;
 			z-index: 1;
@@ -5317,12 +5412,14 @@ body.is-preload .gallery.onload-fade-in article .image2 img {
 			opacity: 1;
 		}
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1400px) {
 
 		.gallery.style1 article {
+			overflow: hidden;
+			position: relative;
 			width: 33.33333%;
+			height: 250px;
 		}
-
 			.gallery.style1 article .caption {
 				padding: 1rem;
 			}
@@ -6930,7 +7027,7 @@ body.is-preload .gallery.onload-fade-in article .image2 img {
 			}
 
 				.gallery2 article {
-					width: 100%;
+					max-width: 100%;
 				}
 
 		}

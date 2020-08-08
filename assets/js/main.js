@@ -29,9 +29,10 @@
 	if (browser.mobile)
 		$body.addClass('is-touch');
 
+		
 	// Scrolly links.
 	$('.scrolly').scrolly({
-		speed: 2000
+		speed: 1600
 	});
 
 	// Dropdowns.
@@ -247,7 +248,7 @@
 	$banner
 		._parallax();
 
-	// Gallery.
+	// Gallery2.
 	$window.on('load', function () {
 
 		var $gallery = $('.gallery2');
