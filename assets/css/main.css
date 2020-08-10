@@ -213,6 +213,17 @@ input, select, textarea {
 			margin: 4em 0;
 		}
 
+		hr.minor {
+			margin: 0 0 2em 0;
+		}
+		hr.fat {
+			border-bottom-width: 2px;
+			margin: 0 0 2em 0;
+		}
+		hr.colorized {
+			border-bottom-color: #e44c65;
+		}
+
 	blockquote {
 		border-left: solid 4px rgba(255, 255, 255, 0.3);
 		font-style: italic;
@@ -2578,6 +2589,9 @@ a.icon.style2:active:before {
 			height: 100%;
 			z-index: 1;
 		}
+		.image.overlayed:before {
+			background-image: url("images/overlay.png");
+		}
 
 		.image img {
 			border-radius: 4px;
@@ -3072,7 +3086,7 @@ a.icon.style2:active:before {
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-		height: 100vh;
+		height: 120vh;
 		overflow: hidden;
 		position: relative;
 	}
@@ -3900,15 +3914,29 @@ a.icon.style2:active:before {
 		/* Spotlight */
 
 			.spotlight {
+				background-position: center center;
 				background-attachment: scroll;
 				height: auto;
 			}
-
+			
+			.spotlight:before {
+				background-image: url("images/overlay.png");
+				content: '';
+				display: block;
+				height: 100%;
+				left: 0;
+				top: 0;
+				width: 100%;
+			}
 				.spotlight .image.main {
 					display: block;
 					margin: 0;
-					max-height: 40vh;
+					max-height: 60vh;
 					overflow: hidden;
+				}
+				.spotlight .image.main img{
+					width: 200%;
+					left: -50%;
 				}
 
 				.spotlight .content {
@@ -4086,7 +4114,7 @@ a.icon.style2:active:before {
 			}
 
 				.spotlight .image.main {
-					max-height: 60vh;
+					max-height: 40vh;
 				}
 
 				.spotlight .content {
@@ -4405,7 +4433,7 @@ a.icon.style2:active:before {
 		/* Spotlight */
 
 			.spotlight .image.main {
-				max-height: 50vh;
+				max-height: 30vh;
 			}
 
 			.spotlight .content {
