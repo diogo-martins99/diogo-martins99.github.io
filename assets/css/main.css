@@ -2209,6 +2209,9 @@ input, select, textarea {
 		opacity: 1;
 		z-index: 2;
 	}
+	header.main {
+		margin-top: 2.2em;
+	}
 
 	header p {
 		color: #ffffff;
@@ -2962,6 +2965,13 @@ a.icon.style2:active:before {
 		text-decoration: none;
 		white-space: nowrap;
 	}
+	.button.fat {
+		box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+	}
+	.button.cv {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
 
 		input[type="submit"]:hover, input[type="submit"]:active,
 		input[type="reset"]:hover,
@@ -2971,6 +2981,17 @@ a.icon.style2:active:before {
 		.button:hover,
 		.button:active {
 			box-shadow: inset 0 0 0 1px #e44c65;
+			color: #e44c65 !important;
+		}
+
+		input[type="submit"]:hover, input[type="submit"]:active,
+		input[type="reset"]:hover,
+		input[type="reset"]:active,
+		input[type="button"]:hover,
+		input[type="button"]:active,
+		.button.fat:hover,
+		.button.fat:active {
+			box-shadow: inset 0 0 0 2px #e44c65;
 			color: #e44c65 !important;
 		}
 
@@ -3697,7 +3718,7 @@ a.icon.style2:active:before {
 			max-width: 95%;
 			padding: 6em;
 			position: relative;
-			text-align: right;
+			text-align: left;
 			vertical-align: middle;
 			z-index: 1;
 		}
@@ -3910,6 +3931,11 @@ a.icon.style2:active:before {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+		
+		/* List */
+		ul {
+			padding-left: 1em;
+		}	
 
 		/* Spotlight */
 
@@ -4020,12 +4046,14 @@ a.icon.style2:active:before {
 							/*display: inline-flex;*/
 							min-width: 400px;
 							list-style: none;
+							padding-left: 1.5em;
 						}
 	
 							
 							#banner .content header ul.icons li {
 								display: inline;
-								padding-right: 2%;
+								padding-left: 0.5em;
+								padding-right: 0.5em;
 							}
 							
 
@@ -4205,7 +4233,6 @@ a.icon.style2:active:before {
 						
 						#banner .content header ul.icons li {
 							display: inline;
-							padding-right: 2%;
 						}
 
 					#banner .content .image {
@@ -4427,7 +4454,7 @@ a.icon.style2:active:before {
 			input[type="reset"],
 			input[type="button"],
 			.button {
-				padding: 0;
+				padding: 0 20px;
 			}
 
 		/* Spotlight */
@@ -4489,12 +4516,12 @@ a.icon.style2:active:before {
 							display: block;
 							min-width: 250px;
 							list-style: none;
+							padding-left: 1.5em;
 						}
 	
 							
 							#banner .content header ul.icons li {
 								display: inline;
-								padding-right: 2%;
 							}
 	
 						#banner .content .image {
