@@ -4566,6 +4566,98 @@ a.icon.style2:active:before {
 
 
 	/* IMPORTED */
+	.col-12 {
+		display: block;
+		float: left;
+		min-height: 1px;
+		padding-left: 12px;
+		padding-right: 12px;
+		width: 100%;
+	}
+	.accolades .accolades-list {
+		display: block;
+		list-style-type: disc;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		padding-inline-start: 40px;
+		list-style-type: none;
+		text-align: top;
+		margin: 0;
+		padding: 0;
+	}
+
+	.accolades .accolades-list li:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(75deg,hsla(0,0%,100%,.15),hsla(0,0%,100%,0) 50%);
+		opacity: 0;
+		-webkit-transition: opacity .15s ease;
+		transition: opacity .15s ease;
+	}
+
+	.accolades .accolades-list li {
+		text-align: -webkit-match-parent;
+		position: relative;
+		display: inline-block;
+		padding: 10px 5px;
+		border-radius: 10px;
+		margin: 10px 15px;
+		max-width: 200px;
+		vertical-align: middle;
+		background: none;
+		-webkit-transform: none;
+		transform: none;
+		-webkit-transition: all .25s ease;
+		transition: all .25s ease;
+		background: linear-gradient(30deg,hsla(0,0%,100%,.25),#fff 50%,hsla(0,0%,100%,0) 60%,hsla(0,0%,100%,.7) 75%,hsla(0,0%,100%,0));
+		background-size: .1%;
+		background-position: -100%;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		-webkit-box-shadow: 0 0 0 transparent;
+		box-shadow: 0 0 0 transparent;
+		border: 1px solid hsla(0,0%,100%,0);
+	}
+	.accolades .accolades-list li:hover {
+		z-index: 1;
+		transform: scale(1.25);
+		box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+	}
+
+	.accolades .accolades-list li img {
+		border-style: none;
+		max-width: 100%;
+		height: auto;
+		display: inline-block;
+		margin-bottom: 10px;
+		position: relative;
+	}
+	.accolades .accolades-list li img.alt {
+		filter: brightness(0) invert(1);
+	}
+
+	.accolades .accolades-list li b {
+		position: relative;
+		font-size: 20px;
+		font-weight: bold;
+		display: block;
+		line-height: 1.08em;
+	}
+
+	.accolades .accolades-list li span {
+		position: relative;
+		font-size: 12px;
+		display: block;
+		margin-top: 15px;
+		line-height: 15px;
+	}
 
 /* Image2 */
 
