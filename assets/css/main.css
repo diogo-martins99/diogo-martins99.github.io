@@ -4560,12 +4560,7 @@ a.icon.style2:active:before {
 
 
 
-
-
-
-
-
-	/* IMPORTED */
+	/*! Based on others*/
 	.col-12 {
 		display: block;
 		float: left;
@@ -4596,7 +4591,7 @@ a.icon.style2:active:before {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background: linear-gradient(75deg,hsla(0,0%,100%,.15),hsla(0,0%,100%,0) 50%);
+		/* background: linear-gradient(75deg,hsla(0,0%,100%,.15),hsla(0,0%,100%,0) 50%); */
 		opacity: 0;
 		-webkit-transition: opacity .15s ease;
 		transition: opacity .15s ease;
@@ -4624,11 +4619,15 @@ a.icon.style2:active:before {
 		-webkit-box-shadow: 0 0 0 transparent;
 		box-shadow: 0 0 0 transparent;
 		border: 1px solid hsla(0,0%,100%,0);
+		/* filter: brightness(0) invert(1); */
 	}
 	.accolades .accolades-list li:hover {
 		z-index: 1;
-		transform: scale(1.25);
+		transform: scale(1.25);		 
+		/* background-color:#e44c65; */
 		box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+		filter: none;
+
 	}
 
 	.accolades .accolades-list li img {
@@ -4638,9 +4637,7 @@ a.icon.style2:active:before {
 		display: inline-block;
 		margin-bottom: 10px;
 		position: relative;
-	}
-	.accolades .accolades-list li img.alt {
-		filter: brightness(0) invert(1);
+		filter: brightness(0) invert(1);;
 	}
 
 	.accolades .accolades-list li b {
@@ -4659,6 +4656,11 @@ a.icon.style2:active:before {
 		line-height: 15px;
 	}
 
+
+
+
+	/* IMPORTED */
+	
 /* Image2 */
 
 .image2 {
@@ -5527,7 +5529,8 @@ body.is-preload .gallery.onload-fade-in article .image2 img {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.75);
+			background-color: rgba(0, 0, 0, 0.8);
+			/* background-color:rgba(228, 76, 101, 0.85); */
 			opacity: 0;
 			padding: 2rem;
 			z-index: 1;
