@@ -4569,7 +4569,7 @@ a.icon.style2:active:before {
 		padding-right: 12px;
 		width: 100%;
 	}
-	.accolades .accolades-list {
+	.accolades-list {
 		display: block;
 		list-style-type: disc;
 		margin-block-start: 1em;
@@ -4583,7 +4583,7 @@ a.icon.style2:active:before {
 		padding: 0;
 	}
 
-	.accolades .accolades-list li:before {
+	.accolades-list li:before {
 		content: "";
 		display: block;
 		position: absolute;
@@ -4597,7 +4597,7 @@ a.icon.style2:active:before {
 		transition: opacity .15s ease;
 	}
 
-	.accolades .accolades-list li {
+	.accolades-list li {
 		text-align: -webkit-match-parent;
 		position: relative;
 		display: inline-block;
@@ -4621,7 +4621,7 @@ a.icon.style2:active:before {
 		border: 1px solid hsla(0,0%,100%,0);
 		/* filter: brightness(0) invert(1); */
 	}
-	.accolades .accolades-list li:hover {
+	 .accolades-list li:hover {
 		z-index: 1;
 		transform: scale(1.25);		 
 		/* background-color:#e44c65; */
@@ -4630,7 +4630,7 @@ a.icon.style2:active:before {
 
 	}
 
-	.accolades .accolades-list li img {
+	 .accolades-list li img {
 		border-style: none;
 		max-width: 100%;
 		height: auto;
@@ -4640,7 +4640,7 @@ a.icon.style2:active:before {
 		filter: brightness(0) invert(1);;
 	}
 
-	.accolades .accolades-list li b {
+	 .accolades-list li b {
 		position: relative;
 		font-size: 20px;
 		font-weight: bold;
@@ -4648,7 +4648,7 @@ a.icon.style2:active:before {
 		line-height: 1.08em;
 	}
 
-	.accolades .accolades-list li span {
+	 .accolades-list li span {
 		position: relative;
 		font-size: 12px;
 		display: block;
