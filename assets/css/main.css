@@ -3243,13 +3243,17 @@ input[type="button"]:disabled,
 	background-position: center center;
 	background-size: cover;
 	box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-	height: 140vh;
+	height: 100vh;
 	overflow: hidden;
 	position: relative;
 }
 
+.spotlight.cover {
+	height: 120vh;
+}
+
 .spotlight.small {
-	height: 60vh;
+	height: 80vh;
 }
 
 .spotlight:nth-last-of-type(1) {
@@ -4114,6 +4118,18 @@ body.is-touch #banner {
 	/* Spotlight */
 
 	.spotlight {
+		background-position: center center;
+		background-attachment: scroll;
+		height: auto;
+	}
+
+	.spotlight.cover {
+		background-position: center center;
+		background-attachment: scroll;
+		height: auto;
+	}
+
+	.spotlight.small {
 		background-position: center center;
 		background-attachment: scroll;
 		height: auto;
