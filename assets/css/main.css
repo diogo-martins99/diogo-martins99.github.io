@@ -3862,13 +3862,9 @@ body.landing #header {
 
 #banner:after {
 	background-image: -moz-linear-gradient(top, rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.60)), url("images/overlay.png");
-	;
 	background-image: -webkit-linear-gradient(top, rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.60)), url("images/overlay.png");
-	;
 	background-image: -ms-linear-gradient(top, rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.60)), url("images/overlay.png");
-	;
 	background-image: linear-gradient(top, rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.60)), url("images/overlay.png");
-	;
 	content: '';
 	display: block;
 	height: 100%;
